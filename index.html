@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>campominato</title>
+    <title>JS Campo Minato Gris</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="./style.css">
-
 </head>
+
 <body>
-    <header>
-        <nav>
+
+    <header class="flex">
+        <div id="header-left" class="flex">
             <figure>
-                <a href="#">
-                    <img src="./Logo.png" alt="Logo">
-                </a>
-                <h1>CAMPO MINATO</h1>
+                <img src="./Logo.png" alt="Logo" width="40">
             </figure>
-        
-            <div class="nav-buttons">
-                <span class="label">Difficoltà:</span>
-                <div class="custom-select">
-                    <select aria-label="Select an option">
-                        <option selected disabled hidden>Select an option</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <a href="#">
-                    <button>PLAY</button>
-                </a>
+            <h1>Campo Minato</h1>
+        </div>
+
+        <div id="header-right" class="flex">
+            <div>
+                <label for="difficolta">Difficoltà: </label>
+                <select name="difficolta" id="difficolta">
+                    <option value="easy">Easy</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Hard</option>
+                </select>
             </div>
-</nav>
+            <button id="play-button" type="button">Play</button>
+        </div>
     </header>
 
-    <main>
-        <div id="griglia">
-            <!-- <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box active"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div> -->
+    <main class="flex">
+
+        <div id="grid" class="flex hidden">
+
         </div>
+
     </main>
-    
+
+    <footer class="flex">
+
+        <p>Made with <i class="fa-solid fa-heart"></i> by <a href="#">Boolean</a></p>
+
+    </footer>
+
+
+
     <script src="./main.js"></script>
+
 </body>
+
 </html>
